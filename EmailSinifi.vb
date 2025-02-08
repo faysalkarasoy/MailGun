@@ -19,6 +19,7 @@ Public Class EmailSinifi
 
             Request.AddParameter("from", $"{MAILGUN_DisplayName} <{MAILGUN_Email}>")
             Request.AddParameter("to", "alici@mail.com")
+	    Request.AddParameter("bcc", "bcc_alici@mail.com")
             Request.AddParameter("cc", "cc_alici@mail.com")
             Request.AddParameter("subject", Baslik)
             Request.AddParameter("html", $"<html><body>{Icerik}</body></html>")
